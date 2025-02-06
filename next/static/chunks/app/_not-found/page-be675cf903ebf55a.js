@@ -2,7 +2,7 @@
   [492],
   {
     3868: (e, t, r) => {
-      (window._next_P = window._next_P || []).push([
+      (window.next_P = window.next_P || []).push([
         "/_not-found/page",
         function () {
           return r(5623);

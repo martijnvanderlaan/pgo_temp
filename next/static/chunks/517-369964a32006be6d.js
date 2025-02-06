@@ -99,7 +99,7 @@
       "use strict";
       function r(e) {
         var t, r;
-        (t = self._next_s),
+        (t = self.next_s),
           (r = () => {
             e();
           }),
@@ -253,7 +253,7 @@
         o && !O && (o.close(), (O = !0), (n = void 0)), (E = !0);
       };
       "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", j, !1) : setTimeout(j);
-      let w = (self._next_f = self._next_f || []);
+      let w = (self.next_f = self.next_f || []);
       w.forEach(S), (w.push = S);
       let T = new ReadableStream({
           start(e) {
@@ -290,9 +290,9 @@
       let D = { onRecoverableError: d.onRecoverableError, onCaughtError: p.onCaughtError, onUncaughtError: p.onUncaughtError };
       function N() {
         let e = (0, l.jsx)(C, { children: (0, l.jsx)(f.HeadManagerContext.Provider, { value: { appDir: !0 }, children: (0, l.jsx)(k, { children: (0, l.jsx)(A, {}) }) }) }),
-          t = window._next_root_layout_missing_tags,
+          t = window.next_root_layout_missing_tags,
           r = !!(null == t ? void 0 : t.length);
-        "_next_error__" === document.documentElement.id || r ? i.default.createRoot(m, D).render(e) : s.default.startTransition(() => i.default.hydrateRoot(m, e, { ...D, formState: R }));
+        "next_error__" === document.documentElement.id || r ? i.default.createRoot(m, D).render(e) : s.default.startTransition(() => i.default.hydrateRoot(m, e, { ...D, formState: R }));
       }
       ("function" == typeof t.default || ("object" == typeof t.default && null !== t.default)) && void 0 === t.default.__esModule && (Object.defineProperty(t.default, "__esModule", { value: !0 }), Object.assign(t.default, t), (e.exports = t.default));
     },
@@ -364,7 +364,7 @@
                   let e = document.createElement(a);
                   e.style.cssText = "position:absolute";
                   let t = document.createElement("div");
-                  return (t.ariaLive = "assertive"), (t.id = "_next-route-announcer__"), (t.role = "alert"), (t.style.cssText = "position:absolute;border:0;height:1px;margin:-1px;padding:0;width:1px;clip:rect(0 0 0 0);overflow:hidden;white-space:nowrap;word-wrap:normal"), e.attachShadow({ mode: "open" }).appendChild(t), document.body.appendChild(e), t;
+                  return (t.ariaLive = "assertive"), (t.id = "next-route-announcer__"), (t.role = "alert"), (t.style.cssText = "position:absolute;border:0;height:1px;margin:-1px;padding:0;width:1px;clip:rect(0 0 0 0);overflow:hidden;white-space:nowrap;word-wrap:normal"), e.attachShadow({ mode: "open" }).appendChild(t), document.body.appendChild(e), t;
                 }
               })()
             ),
@@ -860,7 +860,7 @@
         let { error: t } = e,
           r = null == t ? void 0 : t.digest;
         return (0, o.jsxs)("html", {
-          id: "_next_error__",
+          id: "next_error__",
           children: [(0, o.jsx)("head", {}), (0, o.jsxs)("body", { children: [(0, o.jsx)(c, { error: t }), (0, o.jsx)("div", { style: s.error, children: (0, o.jsxs)("div", { children: [(0, o.jsx)("h2", { style: s.text, children: "Application error: a " + (r ? "server" : "client") + "-side exception has occurred (see the " + (r ? "server logs" : "browser console") + " for more information)." }), r ? (0, o.jsx)("p", { style: s.text, children: "Digest: " + r }) : null] }) })] })],
         });
       }
@@ -3084,7 +3084,7 @@
                 T = (0, o.createHrefFromUrl)(P),
                 M = "push" === O;
               if (((0, g.prunePrefetchCache)(t.prefetchCache), (j.preserveCustomHistoryState = !1), (j.pendingPush = M), E)) return v(t, j, P.toString(), M);
-              if (document.getElementById("_next-page-redirect")) return v(t, j, T, M);
+              if (document.getElementById("next-page-redirect")) return v(t, j, T, M);
               let x = (0, g.getOrCreatePrefetchCacheEntry)({ url: P, nextUrl: t.nextUrl, tree: t.tree, prefetchCache: t.prefetchCache, allowAliasing: S }),
                 { treeAtTimeOfPrefetch: A, data: C } = x;
               return (
@@ -5027,9 +5027,9 @@
             return n;
           },
         });
-      let r = "_next_metadata_boundary__",
-        n = "_next_viewport_boundary__",
-        o = "_next_outlet_boundary__";
+      let r = "next_metadata_boundary__",
+        n = "next_viewport_boundary__",
+        o = "next_outlet_boundary__";
     },
     2301: (e, t, r) => {
       "use strict";

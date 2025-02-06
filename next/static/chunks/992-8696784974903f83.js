@@ -158,7 +158,7 @@
       function y(e) {
         return u.use ? { fetchPriority: e } : { fetchpriority: e };
       }
-      "undefined" == typeof window && (globalThis._next_IMAGE_IMPORTED = !0);
+      "undefined" == typeof window && (globalThis.next_IMAGE_IMPORTED = !0);
       let b = (0, u.forwardRef)((e, t) => {
         let { src: r, srcSet: n, sizes: o, height: a, width: l, decoding: s, className: f, style: c, fetchPriority: d, placeholder: p, loading: m, unoptimized: b, fill: v, onLoadRef: _, onLoadingCompleteRef: P, setBlurComplete: w, setShowAltText: j, sizesInput: S, onLoad: O, onError: C, ...x } = e,
           E = (0, u.useCallback)(
@@ -432,7 +432,7 @@
         if (void 0 === D) throw Error("images.loaderFile detected but the file is missing default export.\nRead more: https://nextjs.org/docs/messages/invalid-images-config");
         let F = A.loader || D;
         delete A.loader, delete A.srcSet;
-        let q = "_next_img_default" in F;
+        let q = "next_img_default" in F;
         if (q) {
           if ("custom" === l.loader) throw Error('Image with src "' + c + '" is missing "loader" prop.\nRead more: https://nextjs.org/docs/messages/next-image-missing-loader');
         } else {
@@ -573,7 +573,7 @@
           .reverse()
           .map((e, t) => {
             let o = e.key || t;
-            if (n.env._next_OPTIMIZE_FONTS && !r && "link" === e.type && e.props.href && ["https://fonts.googleapis.com/css", "https://use.typekit.net/"].some((t) => e.props.href.startsWith(t))) {
+            if (n.env.next_OPTIMIZE_FONTS && !r && "link" === e.type && e.props.href && ["https://fonts.googleapis.com/css", "https://use.typekit.net/"].some((t) => e.props.href.startsWith(t))) {
               let t = { ...(e.props || {}) };
               return (t["data-href"] = t.href), (t.href = void 0), (t["data-optimized-fonts"] = !0), a.default.cloneElement(e, t);
             }
@@ -676,7 +676,7 @@
             return n;
           },
         }),
-        (r._next_img_default = !0);
+        (r.next_img_default = !0);
       let n = r;
     },
     3576: (e, t, r) => {

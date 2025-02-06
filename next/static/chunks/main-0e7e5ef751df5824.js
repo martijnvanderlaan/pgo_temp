@@ -541,9 +541,9 @@
         }
       }
       async function Y(e) {
-        void 0 === e && (e = {}), H.default.onSpanEnd(W.default), (o = JSON.parse(document.getElementById("_next_DATA__").textContent)), (window._next_DATA__ = o), (h = o.defaultLocale);
+        void 0 === e && (e = {}), H.default.onSpanEnd(W.default), (o = JSON.parse(document.getElementById("next_DATA__").textContent)), (window.next_DATA__ = o), (h = o.defaultLocale);
         let t = o.assetPrefix || "";
-        if ((self._next_set_public_path__("" + t + "/next/"), (0, j.setConfig)({ serverRuntimeConfig: {}, publicRuntimeConfig: o.runtimeConfig || {} }), (a = (0, T.getURL)()), (0, D.hasBasePath)(a) && (a = (0, L.removeBasePath)(a)), o.scriptLoader)) {
+        if ((self.next_set_public_path__("" + t + "/next/"), (0, j.setConfig)({ serverRuntimeConfig: {}, publicRuntimeConfig: o.runtimeConfig || {} }), (a = (0, T.getURL)()), (0, D.hasBasePath)(a) && (a = (0, L.removeBasePath)(a)), o.scriptLoader)) {
           let { initScriptLoader: e } = r(4811);
           e(o.scriptLoader);
         }
@@ -552,7 +552,7 @@
           let [t, r] = e;
           return i.routeLoader.onEntrypoint(t, r);
         };
-        return window._next_P && window._next_P.map((e) => setTimeout(() => l(e), 0)), (window._next_P = []), (window._next_P.push = l), ((u = (0, w.default)()).getIsSsr = () => n.isSsr), (s = document.getElementById("_next")), { assetPrefix: t };
+        return window.next_P && window.next_P.map((e) => setTimeout(() => l(e), 0)), (window.next_P = []), (window.next_P.push = l), ((u = (0, w.default)()).getIsSsr = () => n.isSsr), (s = document.getElementById("next")), { assetPrefix: t };
       }
       function K(e, t) {
         return (0, g.jsx)(e, { ...t });
@@ -569,7 +569,7 @@
               value: (0, k.adaptForSearchParams)(n),
               children: (0, g.jsx)(k.PathnameContextProviderAdapter, {
                 router: n,
-                isAutoExport: null != (t = self._next_DATA__.autoExport) && t,
+                isAutoExport: null != (t = self.next_DATA__.autoExport) && t,
                 children: (0, g.jsx)(F.PathParamsContext.Provider, {
                   value: (0, k.adaptForPathParams)(n),
                   children: (0, g.jsx)(v.RouterContext.Provider, { value: (0, M.makePublicRouterInstance)(n), children: (0, g.jsx)(b.HeadManagerContext.Provider, { value: u, children: (0, g.jsx)(N.ImageConfigContext.Provider, { value: { deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840], imageSizes: [16, 32, 48, 64, 96, 128, 256, 384], path: "/next/image", loader: "default", dangerouslyAllowSVG: !1, unoptimized: !0 }, children: r }) }) }),
@@ -751,7 +751,7 @@
         } catch (e) {
           t = (0, x.getProperError)(e);
         }
-        window._next_PRELOADREADY && (await window._next_PRELOADREADY(o.dynamicIds)), (n = (0, M.createRouter)(o.page, o.query, a, { initialProps: o.props, pageLoader: i, App: d, Component: p, wrapApp: Q, err: t, isFallback: !!o.isFallback, subscription: (e, t, r) => el(Object.assign({}, e, { App: t, scroll: r })), locale: o.locale, locales: o.locales, defaultLocale: h, domainLocales: o.domainLocales, isPreview: o.isPreview })), (V = await n._initialMatchesMiddlewarePromise);
+        window.next_PRELOADREADY && (await window.next_PRELOADREADY(o.dynamicIds)), (n = (0, M.createRouter)(o.page, o.query, a, { initialProps: o.props, pageLoader: i, App: d, Component: p, wrapApp: Q, err: t, isFallback: !!o.isFallback, subscription: (e, t, r) => el(Object.assign({}, e, { App: t, scroll: r })), locale: o.locale, locales: o.locales, defaultLocale: h, domainLocales: o.domainLocales, isPreview: o.isPreview })), (V = await n._initialMatchesMiddlewarePromise);
         let r = { App: d, initial: !0, Component: p, props: o.props, err: t, isHydratePass: !0 };
         (null == e ? void 0 : e.beforeRender) && (await e.beforeRender()), el(r);
       }
@@ -1069,7 +1069,7 @@
                 }
               }
             }, [e]),
-            (0, o.jsx)("p", { "aria-live": "assertive", id: "_next-route-announcer__", role: "alert", style: s, children: t })
+            (0, o.jsx)("p", { "aria-live": "assertive", id: "next-route-announcer__", role: "alert", style: s, children: t })
           );
         },
         l = u;
@@ -1496,13 +1496,13 @@
             "beforeInteractive" === l)
           )
             return r
-              ? (i.default.preload(r, _.integrity ? { as: "script", integrity: _.integrity, nonce: b, crossOrigin: _.crossOrigin } : { as: "script", nonce: b, crossOrigin: _.crossOrigin }), (0, a.jsx)("script", { nonce: b, dangerouslySetInnerHTML: { __html: "(self._next_s=self._next_s||[]).push(" + JSON.stringify([r, { ..._, id: t }]) + ")" } }))
-              : (_.dangerouslySetInnerHTML && ((_.children = _.dangerouslySetInnerHTML.__html), delete _.dangerouslySetInnerHTML), (0, a.jsx)("script", { nonce: b, dangerouslySetInnerHTML: { __html: "(self._next_s=self._next_s||[]).push(" + JSON.stringify([0, { ..._, id: t }]) + ")" } }));
+              ? (i.default.preload(r, _.integrity ? { as: "script", integrity: _.integrity, nonce: b, crossOrigin: _.crossOrigin } : { as: "script", nonce: b, crossOrigin: _.crossOrigin }), (0, a.jsx)("script", { nonce: b, dangerouslySetInnerHTML: { __html: "(self.next_s=self.next_s||[]).push(" + JSON.stringify([r, { ..._, id: t }]) + ")" } }))
+              : (_.dangerouslySetInnerHTML && ((_.children = _.dangerouslySetInnerHTML.__html), delete _.dangerouslySetInnerHTML), (0, a.jsx)("script", { nonce: b, dangerouslySetInnerHTML: { __html: "(self.next_s=self.next_s||[]).push(" + JSON.stringify([0, { ..._, id: t }]) + ")" } }));
           "afterInteractive" === l && r && i.default.preload(r, _.integrity ? { as: "script", integrity: _.integrity, nonce: b, crossOrigin: _.crossOrigin } : { as: "script", nonce: b, crossOrigin: _.crossOrigin });
         }
         return null;
       }
-      Object.defineProperty(g, "_nextScript", { value: !0 });
+      Object.defineProperty(g, "nextScript", { value: !0 });
       let y = g;
       ("function" == typeof t.default || ("object" == typeof t.default && null !== t.default)) && void 0 === t.default.__esModule && (Object.defineProperty(t.default, "__esModule", { value: !0 }), Object.assign(t.default, t), (e.exports = t.default));
     },
@@ -1618,7 +1618,7 @@
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         r(8925),
-        (self._next_set_public_path__ = (e) => {
+        (self.next_set_public_path__ = (e) => {
           r.p = e;
         }),
         ("function" == typeof t.default || ("object" == typeof t.default && null !== t.default)) && void 0 === t.default.__esModule && (Object.defineProperty(t.default, "__esModule", { value: !0 }), Object.assign(t.default, t), (e.exports = t.default));
@@ -2060,8 +2060,8 @@
         U = ["/_document", "/_app", "/_error"],
         k = "public",
         F = "static",
-        B = "_next_DROP_CLIENT_FILE__",
-        H = "_next_BUILTIN_DOCUMENT__",
+        B = "next_DROP_CLIENT_FILE__",
+        H = "next_BUILTIN_DOCUMENT__",
         W = "__barrel_optimize__",
         G = "client-reference-manifest",
         q = "server-reference-manifest",
@@ -2210,7 +2210,7 @@
           .reverse()
           .map((e, t) => {
             let o = e.key || t;
-            if (n.env._next_OPTIMIZE_FONTS && !r && "link" === e.type && e.props.href && ["https://fonts.googleapis.com/css", "https://use.typekit.net/"].some((t) => e.props.href.startsWith(t))) {
+            if (n.env.next_OPTIMIZE_FONTS && !r && "link" === e.type && e.props.href && ["https://fonts.googleapis.com/css", "https://use.typekit.net/"].some((t) => e.props.href.startsWith(t))) {
               let t = { ...(e.props || {}) };
               return (t["data-href"] = t.href), (t.href = void 0), (t["data-optimized-fonts"] = !0), s.default.cloneElement(e, t);
             }
@@ -2608,7 +2608,7 @@
               o = t.headers.get("x-nextjs-rewrite"),
               s = o || t.headers.get("x-nextjs-matched-path"),
               u = t.headers.get(N.MATCHED_PATH_HEADER);
-            if ((!u || s || u.includes("_next_data_catchall") || u.includes("/_error") || u.includes("/404") || (s = u), s)) {
+            if ((!u || s || u.includes("next_data_catchall") || u.includes("/_error") || u.includes("/404") || (s = u), s)) {
               if (s.startsWith("/")) {
                 let t = (0, h.parseRelativeUrl)(s),
                   u = (0, j.getNextPathnameInfo)(t.pathname, { nextConfig: n, parseData: !0 }),
@@ -2881,14 +2881,14 @@
                 if (((a = await this.getRouteInfo({ route: e, pathname: e, query: er, as: r, resolvedAs: en, routeProps: { shallow: !1 }, locale: G.locale, isPreview: G.isPreview, isNotFound: !0 })), "type" in a)) throw Error("Unexpected middleware effect on /404");
               }
             }
-            B && "/_error" === this.pathname && (null == (d = self._next_DATA__.props) ? void 0 : null == (c = d.pageProps) ? void 0 : c.statusCode) === 500 && (null == (R = a.props) ? void 0 : R.pageProps) && (a.props.pageProps.statusCode = 500);
+            B && "/_error" === this.pathname && (null == (d = self.next_DATA__.props) ? void 0 : null == (c = d.pageProps) ? void 0 : c.statusCode) === 500 && (null == (R = a.props) ? void 0 : R.pageProps) && (a.props.pageProps.statusCode = 500);
             let l = n.shallow && G.route === (null != (O = a.route) ? O : eo),
               f = null != (j = n.scroll) ? j : !B && !l,
               g = null != o ? o : f ? { x: 0, y: 0 } : null,
               y = { ...G, route: eo, pathname: et, query: er, asPath: J, isFallback: !1 };
             if (B && el) {
               if (((a = await this.getRouteInfo({ route: this.pathname, pathname: this.pathname, query: er, as: r, resolvedAs: en, routeProps: { shallow: !1 }, locale: G.locale, isPreview: G.isPreview, isQueryUpdating: B && !this.isFallback })), "type" in a)) throw Error("Unexpected middleware effect on " + this.pathname);
-              "/_error" === this.pathname && (null == (I = self._next_DATA__.props) ? void 0 : null == (T = I.pageProps) ? void 0 : T.statusCode) === 500 && (null == (x = a.props) ? void 0 : x.pageProps) && (a.props.pageProps.statusCode = 500);
+              "/_error" === this.pathname && (null == (I = self.next_DATA__.props) ? void 0 : null == (T = I.pageProps) ? void 0 : T.statusCode) === 500 && (null == (x = a.props) ? void 0 : x.pageProps) && (a.props.pageProps.statusCode = 500);
               try {
                 await this.set(y, a, g);
               } catch (e) {
@@ -2952,7 +2952,7 @@
                       if (h) return null;
                       throw e;
                     });
-            if ((j && ("/_error" === r || "/404" === r) && (j.effect = void 0), h && (j ? (j.json = self._next_DATA__.props) : (j = { json: self._next_DATA__.props })), t(), (null == j ? void 0 : null == (P = j.effect) ? void 0 : P.type) === "redirect-internal" || (null == j ? void 0 : null == (b = j.effect) ? void 0 : b.type) === "redirect-external")) return j.effect;
+            if ((j && ("/_error" === r || "/404" === r) && (j.effect = void 0), h && (j ? (j.json = self.next_DATA__.props) : (j = { json: self.next_DATA__.props })), t(), (null == j ? void 0 : null == (P = j.effect) ? void 0 : P.type) === "redirect-internal" || (null == j ? void 0 : null == (b = j.effect) ? void 0 : b.type) === "redirect-external")) return j.effect;
             if ((null == j ? void 0 : null == (v = j.effect) ? void 0 : v.type) === "rewrite") {
               let t = (0, a.removeTrailingSlash)(j.effect.resolvedHref),
                 o = await this.pageLoader.getPageList();
@@ -3116,7 +3116,7 @@
             });
           let E = (0, a.removeTrailingSlash)(e);
           (this.components = {}), "/_error" !== e && (this.components[E] = { Component: u, initial: !0, props: n, err: l, __N_SSG: n && n.__N_SSG, __N_SSP: n && n.__N_SSP }), (this.components["/_app"] = { Component: i, styleSheets: [] }), (this.events = z.events), (this.pageLoader = o);
-          let S = (0, p.isDynamicRoute)(e) && self._next_DATA__.autoExport;
+          let S = (0, p.isDynamicRoute)(e) && self.next_DATA__.autoExport;
           if (
             ((this.basePath = ""),
             (this.sub = c),
@@ -3124,7 +3124,7 @@
             (this._wrapApp = s),
             (this.isSsr = !0),
             (this.isLocaleDomain = !1),
-            (this.isReady = !!(self._next_DATA__.gssp || self._next_DATA__.gip || self._next_DATA__.isExperimentalCompile || (self._next_DATA__.appGip && !self._next_DATA__.gsp) || (!S && !self.location.search))),
+            (this.isReady = !!(self.next_DATA__.gssp || self.next_DATA__.gip || self.next_DATA__.isExperimentalCompile || (self.next_DATA__.appGip && !self.next_DATA__.gsp) || (!S && !self.location.search))),
             (this.state = { route: E, pathname: e, query: t, asPath: S ? e : r, isPreview: !!b, locale: void 0, isFallback: d }),
             (this._initialMatchesMiddlewarePromise = Promise.resolve(!1)),
             !r.startsWith("//"))
@@ -4431,7 +4431,7 @@
         J = { edge: "edge", experimentalEdge: "experimental-edge", nodejs: "nodejs" },
         Z = { shared: "shared", reactServerComponents: "rsc", serverSideRendering: "ssr", actionBrowser: "action-browser", api: "api", middleware: "middleware", instrument: "instrument", edgeAsset: "edge-asset", appPagesBrowser: "app-pages-browser" },
         ee = { ...Z, GROUP: { builtinReact: [Z.reactServerComponents, Z.actionBrowser], serverOnly: [Z.reactServerComponents, Z.actionBrowser, Z.instrument, Z.middleware], neutralTarget: [Z.api], clientOnly: [Z.serverSideRendering, Z.appPagesBrowser], bundled: [Z.reactServerComponents, Z.actionBrowser, Z.serverSideRendering, Z.appPagesBrowser, Z.shared, Z.instrument], appPages: [Z.reactServerComponents, Z.serverSideRendering, Z.appPagesBrowser, Z.actionBrowser] } },
-        et = { edgeSSREntry: "_next_edge_ssr_entry__", metadata: "_next_metadata__", metadataRoute: "_next_metadata_route__", metadataImageMeta: "_next_metadata_image_meta__" };
+        et = { edgeSSREntry: "next_edge_ssr_entry__", metadata: "next_metadata__", metadataRoute: "next_metadata_route__", metadataImageMeta: "next_metadata_image_meta__" };
     },
     2976: (e, t) => {
       "use strict";
