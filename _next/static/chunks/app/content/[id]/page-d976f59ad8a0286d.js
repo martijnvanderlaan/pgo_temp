@@ -79,10 +79,10 @@
             (0, r.jsxs)("div", {
               className: h().navigation_actions,
               children: [
-                (0, r.jsx)(i(), { href: "/pgo_temp/?section=overpgo", children: "Over PGO" }),
-                (0, r.jsx)(i(), { href: "/pgo_temp/?section=overdigizorg", children: "Over Digizorg" }),
-                (0, r.jsx)(i(), { href: "/pgo_temp/?section=faq", children: "Veelgestelde vragen" }),
-                (0, r.jsx)(i(), { href: "/pgo_temp/?section=contact", children: "Contact" }),
+                (0, r.jsx)(i(), { href: "/pgo_temp?section=overpgo", children: "Over PGO" }),
+                (0, r.jsx)(i(), { href: "/pgo_temp?section=overdigizorg", children: "Over Digizorg" }),
+                (0, r.jsx)(i(), { href: "/pgo_temp?section=faq", children: "Veelgestelde vragen" }),
+                (0, r.jsx)(i(), { href: "/pgo_temp?section=contact", children: "Contact" }),
                 (0, r.jsxs)("div", { className: h().auth_actions, children: [(0, r.jsx)(a.A, { variant: "text", children: (0, r.jsx)("a", { target: "_blank", href: c.Hn, rel: "noopener noreferrer", children: "Registreren" }) }), (0, r.jsx)(a.A, { children: (0, r.jsx)("a", { target: "_blank", href: c.Vt, rel: "noopener noreferrer", children: "Inloggen" }) })] }),
                 (0, r.jsxs)("div", {
                   className: h().mobile_menu,
@@ -91,7 +91,7 @@
                   children: [
                     (0, r.jsx)("span", { className: h().burger_text, children: "Menu" }),
                     (0, r.jsx)(l.default, { width: 24, height: 24, src: "/pgo_temp/menu.png", alt: "OPTIONS" }),
-                    e && (0, r.jsxs)("div", { className: h().dropdown, children: [(0, r.jsx)(i(), { href: "/pgo_temp/?section=overpgo", children: "Over PGO" }), (0, r.jsx)(i(), { href: "/pgo_temp/?section=overdigizorg", children: "Over Digizorg" }), (0, r.jsx)(i(), { href: "/pgo_temp/?section=faq", children: "Veelgestelde vragen" }), (0, r.jsx)(i(), { href: "/pgo_temp/?section=contact", children: "Contact" })] }),
+                    e && (0, r.jsxs)("div", { className: h().dropdown, children: [(0, r.jsx)(i(), { href: "/pgo_temp?section=overpgo", children: "Over PGO" }), (0, r.jsx)(i(), { href: "/pgo_temp?section=overdigizorg", children: "Over Digizorg" }), (0, r.jsx)(i(), { href: "/pgo_temp?section=faq", children: "Veelgestelde vragen" }), (0, r.jsx)(i(), { href: "/pgo_temp?section=contact", children: "Contact" })] }),
                   ],
                 }),
               ],
