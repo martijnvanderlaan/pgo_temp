@@ -326,7 +326,7 @@
                   onClick: () => n((e) => !e),
                   children: [
                     (0, s.jsx)("span", { className: h().burger_text, children: "Menu" }),
-                    (0, s.jsx)(r.default, { width: 24, height: 24, src: "/menu.png", alt: "OPTIONS" }),
+                    (0, s.jsx)(r.default, { width: 24, height: 24, src: "/pgo_temp/menu.png", alt: "OPTIONS" }),
                     e && (0, s.jsxs)("div", { className: h().dropdown, children: [(0, s.jsx)(a(), { href: "/pgo_temp?section=overpgo", children: "Over PGO" }), (0, s.jsx)(a(), { href: "/pgo_temp?section=overdigizorg", children: "Over Digizorg" }), (0, s.jsx)(a(), { href: "/pgo_temp?section=faq", children: "Veelgestelde vragen" }), (0, s.jsx)(a(), { href: "/pgo_temp?section=contact", children: "Contact" })] }),
                   ],
                 }),
